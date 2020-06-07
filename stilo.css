@@ -1,6 +1,6 @@
 #jogo{
     width:603px;
-    height:600px;
+    height:602px;
     border:solid 3px
 }
 #mostrador{
@@ -9,6 +9,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
     width:200px;
+    height: 50px;
 }
 p {
     float: left;
