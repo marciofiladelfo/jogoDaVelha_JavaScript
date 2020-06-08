@@ -37,7 +37,6 @@ function iniciaCasa(){
             }
         });
     }
-    }
 }
 
 
@@ -83,4 +82,11 @@ async function verificaVencedor(){
 } 
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function limpa(){
+    var casa = document.getElementsByClassName("casa");
+    for(var i = 0; i < casa.length; i++){
+        casa[i] = 0;
+    }
 }
