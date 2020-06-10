@@ -3,6 +3,16 @@ const player2 = "O";
 var playTime = player1;
 var gameOver = false;
 
+$(document).ready(function(){
+    $('#botao').click(function(){
+    $("img").hide();
+    gameOver = false;
+    playTime = player1;
+    atualizaMostrador();
+    iniciaCasa();
+    });
+});
+
 atualizaMostrador();
 iniciaCasa();
 
@@ -72,21 +82,14 @@ async function verificaVencedor(){
     {
         gameOver = true;
         await sleep(50);
-        window.confirm("FIM DO JOGO : Deu Velha" + "\nJogar novamente?");
+        document.write("FIM DO JOGO : Deu Velha" + "\nJogar novamente?");
     }
     if (vencedor != ""){
         gameOver = true;
         await sleep(50);
-        window.confirm("FIM DO JOGO : O vencedor foi o: '" + vencedor + "'" + "\nJogar novamente?");
+        document.write("FIM DO JOGO : O vencedor foi o: '" + vencedor + "'" + "\nJogar novamente?");
     }
 } 
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function limpa(){
-    var casa = document.getElementsByClassName("casa");
-    for(var i = 0; i < casa.length; i++){
-        casa[i] = 0;
-    }
 }
