@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stilo.css" media="all">   
-    <script src="script.js" defer></script>
-    <title>Jogo da Velha V1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <title>Jogo da Velha</title>
 </head>
 <body>
-    <div id="mostrador">
-        <p>Vez do Jogador</p>
-        <img src="" height="50">
-    </div>
+    <h1>Jogo da Velha</h1>
     <div id="jogo">
-        <div class="linha">
-            <div class="casa" id="casa1" jogada=""></div>
-            <div class="casa" id="casa2" jogada=""></div>
-            <div class="casa" id="casa3" jogada=""></div>
-        </div>
-        <div class="linha">
-            <div class="casa" id="casa4" jogada=""></div>
-            <div class="casa" id="casa5" jogada=""></div>
-            <div class="casa" id="casa6" jogada=""></div>
-        </div>
-        <div class="linha">
-            <div class="casa" id="casa7" jogada=""></div>
-            <div class="casa" id="casa8" jogada=""></div>
-            <div class="casa" id="casa9" jogada=""></div>
-        </div>
+    <table>
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+        </tr>
+    </table>
     </div>
-    <button id="botao" class="reiniciar">Reiniciar Jogo</button>
-    <footer>
-        <script src="jquery.js"></script>
-    </footer>
+    <script src="./tictactoe.js"></script>
 </body>
 </html>
