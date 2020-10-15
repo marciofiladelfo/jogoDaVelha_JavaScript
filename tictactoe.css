@@ -1,0 +1,52 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    color: darkred;
+    letter-spacing: 3px;
+    font-size: 42px;
+    text-shadow: 1px 1px white;
+}
+
+p{
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px darkred;
+}
+
+td {
+  width: 200px;
+  height: 200px;
+  border: 1px solid darkred;
+  width: 200px;
+  height: 200px;
+  font-size: 150px;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  color: #F44336;
+  }
+  
+  td:hover {
+    background: rgb(119, 60, 60);
+  }
+  
+  table {
+    border: 1px solid darkred;
+  }
+
+  @media (max-width:450px){
+    table {
+      width: 100%; 
+    }
+    td{
+      height: 120px;
+      font-size: 80px;
+    }
+  }
